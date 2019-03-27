@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt # plotting pack
 from matplotlib.gridspec import GridSpec # easy subplots AND BEAUTIFUL FIGS
 import scipy.signal as sg # signal pack
 import scipy.io as sio # load save matlab files
-from functions.func_sig_cost import bearingfault,noise_snr,tTacho_fsig,COT_intp,\
+from functions.REB_functions import bearingfault,noise_snr,tTacho_fsig,COT_intp,\
 SK_W,PSD_envW,printxtips
 plt.close('all')
 # %% Numerical Signal
