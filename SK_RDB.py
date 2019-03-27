@@ -10,7 +10,7 @@ from matplotlib.gridspec import GridSpec # easy subplots
 import scipy.signal as sg # signal pack
 from scipy.io import wavfile # read wav files
 import scipy.io as sio # load save matlab files
-from functions.func_sig_cost import tTacho_fsig,COT_intp,SK_W,PSD_envW,\
+from functions.REB_functions import tTacho_fsig,COT_intp,SK_W,PSD_envW,\
 printxtips,printxtipsusr
 # %% Loading DB
 lfile     = 'G:\Mon Drive\GCPDS\Data Base\Surveillance8 Contest'
