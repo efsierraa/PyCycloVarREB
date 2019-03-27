@@ -1,6 +1,6 @@
 # Introduction
 
-The following repository has the functions needed in order to reproduce the results of the work entitled "Filtered envelope spectrum using short periodograms for bearing fault identification under variable speed" presented in the http://iftomm2019.com/, the database is available as supplementary material of the article, "Feedback on the Surveillance 8 challenge: Vibration-based diagnosis of a Safran aircraft engine", founded in https://doi.org/10.1016/j.ymssp.2017.01.037. If you find this material useful, please give a citation to the papers mentioned above.
+The following repository has the functions needed in order to reproduce the results of the work entitled "Cyclo-non-stationary analysis for bearing fault identification based on instantaneous angular speed estimation" presented in the https://survishno.sciencesconf.org/, the database is available as supplementary material of the article, "Feedback on the Surveillance 8 challenge: Vibration-based diagnosis of a Safran aircraft engine", founded in https://doi.org/10.1016/j.ymssp.2017.01.037. If you find this material useful, please give a citation to the papers mentioned above.
 
 # REB_Highlight
 Functions to REB failure identification based on Spectral kurtosis:
