@@ -20,6 +20,8 @@ Functions to REB failure identification based on Spectral kurtosis:
   
   COT_intp2 # Interpolates the signal given an IAS profile, useful for numerical tests.
   
+  tTacho_fsigLVA # Creates an IF profile from the tachometer signal, translated from matlab from courses of the http://lva.insa-lyon.fr/en/
+  
   # functions to print data-tips using matplotlib
   The following functions are using to put data-tips in a certain amount of harmonics given a Power Spectral Density
   
