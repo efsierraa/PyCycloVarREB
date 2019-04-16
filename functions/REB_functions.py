@@ -290,6 +290,32 @@ def COT_intp2(f_ins,SampPerRev,x,fs):
     xs = xs(tt)
     tc=np.r_[:len(xs)]/SampPerRev
     return xs,tc,SampPerRev,tt
+# encoder signal to IAS
+def tTacho_fsigLVA(top,fs,TPT=44):
+    top = top/max(abs(top))
+    
+    t = np.r_[:len(top)]/fs
+    seuil=0;
+    ifm=np.where((top[:-1]<=seuil) & (top[1:]>seuil))[0]
+    tfm = (t[ifm]*top[ifm+1]-t[ifm+1]*top[ifm])/(top[ifm+1] -top[ifm])
+    ifm = tfm*fs;
+    
+    W =np.array([])
+    tW=np.array([])
+    for ii in np.r_[:TPT]:
+        tfmii = tfm[ii::TPT];
+        W=np.append(W,[1/np.diff(tfmii)])
+        tW=np.append(tW,[tfmii[:-1]/2 + tfmii[1:]/2])
+    
+    ordre=np.argsort(tW)
+    tW=np.sort(tW)
+    W = W[ordre]
+    
+    W=interpolate.InterpolatedUnivariateSpline\
+    (tW,W,w=None, bbox=[None, None])
+    
+    W = W(t)
+    return t,W
 #%% plotting functions
 def printxtips(f,psd,xheigh0,deltapsd,K):
     txheigh = np.zeros(K)
