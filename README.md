@@ -18,7 +18,7 @@ Functions to REB failure identification based on Spectral kurtosis:
   
   COT_intp # interpolates a vibration signal with given time indexes in tTacho_fsig
   
-  COT_intp2 # Interpolates the signal given an IAS profile, useful for numerical tests.
+  COT_intp2 # Interpolates the signal given an IAS profile, useful for numerical tests
   
   tTacho_fsigLVA # Creates an IF profile from the tachometer signal, translated from matlab from courses of the http://lva.insa-lyon.fr/en/
   
