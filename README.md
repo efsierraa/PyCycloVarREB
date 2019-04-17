@@ -14,7 +14,7 @@ Functions to REB failure identification based on Spectral kurtosis:
   # Angular resampling functions
   These functions are founded initially in Noise and Vibration Analysis Signal Analysis and Experimental Procedures by Anders Brandt
   
-  tTacho_fsig # Time indexes for angular resampling, as the Instantaneous Angular Profile (IAS), uses as input the tachometer signal
+  tTacho_fsig # Time indexes for angular resampling, and the Instantaneous Angular Profile (IAS), uses as input the tachometer signal
   
   COT_intp # interpolates a vibration signal with given time indexes in tTacho_fsig
   
