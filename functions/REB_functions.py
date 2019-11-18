@@ -268,8 +268,7 @@ def COT_intp2(f_ins,SampPerRev,x,fs):
     t= np.r_[:len(x)];t=t/fs;
     # Calculate the inst. angle as function of time
     # (in part of revolutions, not radians!)
-    Ainst = integrate.cumtrapz(f_ins,t)
-    t = t[:-1]
+    Ainst = integrate.cumtrapz(f_ins,t, initial=0)
     # Find every 1/SampPerRev of a cycle in Ainst
     minA = min(Ainst)
     maxA = max(Ainst)
