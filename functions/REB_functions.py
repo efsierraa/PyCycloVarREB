@@ -265,10 +265,11 @@ def COT_intp(x,tTacho,PPR,fs,SampPerRev):
 
 #% COT second function for IF as input
 def COT_intp2(f_ins,SampPerRev,x,fs):
-    t= np.r_[::len(x)];t=t/fs;
+    t= np.r_[:len(x)];t=t/fs;
     # Calculate the inst. angle as function of time
     # (in part of revolutions, not radians!)
     Ainst = integrate.cumtrapz(f_ins,t)
+    t = t[:-1]
     # Find every 1/SampPerRev of a cycle in Ainst
     minA = min(Ainst)
     maxA = max(Ainst)
@@ -279,7 +280,7 @@ def COT_intp2(f_ins,SampPerRev,x,fs):
     tt = tt(Fractions)
     # Now upsample the original signal 10 times (to a total
     # of approx 25 times oversampling)
-    x = sg.resample(x,10)
+    x = sg.resample(x,10*len(x))
     fs= 10*fs
     # create a time axis for this upsampled signal
     #tx=(0:1/fs:(length(x)-1)/fs);
