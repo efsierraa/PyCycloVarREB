@@ -1,8 +1,8 @@
-# Introduction
+# Cyclostationary analysis in angular domain for bearing identification
 
 The following repository has the functions needed in order to reproduce the results of the work entitled "Cyclo-non-stationary analysis for bearing fault identification based on instantaneous angular speed estimation" presented in the https://survishno.sciencesconf.org/, the database is available as supplementary material of the article, "Feedback on the Surveillance 8 challenge: Vibration-based diagnosis of a Safran aircraft engine", founded in https://doi.org/10.1016/j.ymssp.2017.01.037. If you find this material useful, please give a citation to the papers mentioned above.
 
-# REB_Highlight
+# REB Highlight
 Functions to REB failure identification based on Spectral kurtosis:
 
   SK_W # Spectral kurtosis from a Matlab repository made by ANTONI Jerome
