@@ -12,7 +12,7 @@ Functions to REB failure identification based on Spectral kurtosis:
   bearingfault # Bearing fault numerical signal for any questions please contact http://lva.insa-lyon.fr/en/
   
   # Angular resampling functions
-  These functions are founded initially in Noise and Vibration Analysis Signal Analysis and Experimental Procedures by Anders Brandt
+  These functions are found initially in Noise and Vibration Analysis Signal Analysis and Experimental Procedures by Anders Brandt
   
   tTacho_fsig # Time indexes for angular resampling, and the Instantaneous Angular Profile (IAS), uses as input the tachometer signal
   
