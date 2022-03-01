@@ -1,7 +1,7 @@
 import numpy as np # math pack!
 import scipy.signal as sg # DSP
 from numpy import linalg as LA # Linear algebra
-import sys # sio package
+import sys # sio packagesudo
 
 # %% Spectral Kurtosis
 def SK_W(x,Nfft,Noverlap,Window):
@@ -81,9 +81,10 @@ def PSD_envW(x,nfft,Noverlap,Window,Nwind2,nfft2,filterr):
 # Nwind2 is the length of the sliding window it must be larger than Window
 # nfft2 is the resolution of the filtered PSD
 # filterr is the filter is a boolean variable if true the PSD is filtered with SK_W in a sliding basis
+# --------------------------------------------------
 # Author: Edgar F. Sierra-Alonso
 # Last Revision: 02-2022
-# --------------------------
+# --------------------------------------------------
     Window = Window.reshape(-1,1)[:,0]
     n = len(x)		# Number of data points
     nwind = len(Window) # length of window
