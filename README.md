@@ -55,4 +55,4 @@ psd,f,K,SK_w  = PSD_envW(x,Nfft,Noverlap,Window,Nw2,Nfft2,filterr)
   Sierra-Alonso, E. F., Antoni, J., & Castellanos-Dominguez, G. (2019, July). Cyclo-non-stationary analysis for bearing fault identification based on instantaneous angular speed estimation. In Surveillance, Vishno and AVE conferences.
 ```
 ## Revised version of the code
-  2022-02-28, revised functions to enhance impulsive components using Spectral Kurtosis in the folder filter_SK, possible problem with function sg.fftconvolve inside PSD_envW, if you encounter a problem replace by sg.filtfilt(b, 1, x).
+  2022-02-28, revised functions to enhance impulsive components using Spectral Kurtosis in the folder filter_SK, possible problem with last version of function sg.fftconvolve inside PSD_envW, if you encounter a problem replace by sg.filtfilt(b, 1, x).
