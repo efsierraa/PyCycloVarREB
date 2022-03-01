@@ -51,6 +51,8 @@ psd,f,K,SK_w  = PSD_envW(x,Nfft,Noverlap,Window,Nw2,Nfft2,filterr)
   # References
   ```
   Sierra-Alonso, E. F., Caicedo-Acosta, J., Orozco Gutiérrez, Á. Á., Quintero, H. F., & Castellanos-Dominguez, G. (2021). Short-time/-angle spectral analysis for vibration monitoring of bearing failures under variable speed. Applied Sciences, 11(8), 3369.
+
+  Sierra-Alonso, E. F., Antoni, J., & Castellanos-Dominguez, G. (2019, July). Cyclo-non-stationary analysis for bearing fault identification based on instantaneous angular speed estimation. In Surveillance, Vishno and AVE conferences.
 ```
 ## Revised version of the code
   2022-02-28, revised functions to enhance impulsive components using Spectral Kurtosis in the folder filter_SK
