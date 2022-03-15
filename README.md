@@ -14,7 +14,7 @@ Functions to REB failure identification based on Spectral kurtosis:
   bearingfault # Bearing fault numerical signal for any questions please contact http://lva.insa-lyon.fr/en/
 ## Example
 ``` python
-mfreq = 0.4*fr # fr rotational speed
+mfreq = 0.4*fr # fr rotational speed, 0.4 is the lowest expected failure frequency
 Nw1      = 2**np.ceil(np.log2(1/mfreq*fs))*2**3 # greater than Nw2 window for envelope spectrum
 Nw1      = int(Nw1)
 Nw2      = 2**8 # window for computation of SK
