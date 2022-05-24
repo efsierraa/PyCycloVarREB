@@ -103,9 +103,10 @@ def PSD_envW(x,nfft,Noverlap,Window,Nwind2,nfft2,filterr):
     	# filtering
         if filterr == 1:
             SK,_,_,_ = SK_W(xw,nfft2,Noverlap2,Window2)
-            SK_w[:,i] = SK
-            b = np.fft.fftshift(np.real(np.fft.ifft(SK)))
-            xw = sg.fftconvolve(xw,b,mode='same') #xw = fftfilt(b,xw);
+            SK_w[:,i] = SK # SK as frequency response of the filter
+            b = np.fft.fftshift(np.real(np.fft.ifft(SK))) # impulse response
+            xw = sg.filtfilt(b, 1, xw)# Updated 23-05-2022, Nota that for a FIR filter the impulse response function is equal the filter coefficients b
+            # xw = sg.fftconvolve(xw,b,mode='same') #xw = fftfilt(b,xw); in Matlab
         xw = np.abs(sg.hilbert(xw)) # envelope
         xw = xw**2
         xw = xw - np.mean(xw)
