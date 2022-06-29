@@ -2,7 +2,7 @@
 [![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3102/)
 [![Poetry](https://img.shields.io/badge/poetry-1.1.11-red.svg)](https://python-poetry.org/docs/master/#installation/)
 
-The following repository has the objective of provide a clean envelope spectrum to diagnose bearing faults under variable speed, a challenging database is used to test the present functions. The database is available as supplementary material of the article, "Feedback on the Surveillance 8 challenge: Vibration-based diagnosis of a Safran aircraft engine", founded in https://doi.org/10.1016/j.ymssp.2017.01.037. If you find this material useful, please give a citation to any of the papers mentioned in references.
+The following repository has the objective of provide a clean envelope spectrum to diagnose bearing faults under variable speed, a challenging database is used to test the present functions. The database is available as supplementary material of the article, "Feedback on the Surveillance 8 challenge: Vibration-based diagnosis of a Safran aircraft engine" in https://doi.org/10.1016/j.ymssp.2017.01.037. If you find this material useful, please give a citation to any of the papers mentioned in references.
 
 # REB Highlight
 Functions to REB failure identification based on Spectral kurtosis:
